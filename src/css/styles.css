@@ -4,4 +4,13 @@
 
 body {
   background-color: antiquewhite;
+  padding: 1em;
+}
+
+.hand {
+  width: 20%;
+}
+
+ul {
+  list-style: none;
 }

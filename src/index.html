@@ -2,14 +2,16 @@
 <html lang='en-US'>
 
 <head>
+  <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.min.css" rel="stylesheet" type="text/css" />
   <title>Document</title>
 </head>
 
 <body>
+
   <form id="search-form">
-    <input type="text" placeholder="Card Name Here" id="search-field">
-    <button type="submit">Search</button>
-    <button type="button" id="more-options">More Options</button>
+    <input type="text" placeholder="Card Name Here" id="search-field" class="">
+    <button type="submit" class="btn btn-primary">Search</button>
+    <button type="button" id="more-options" class="btn btn-info">More Options</button>
     <div class="advanced-search hidden">
       <label for="language">Language</label>
       <select name="language" id="language">
@@ -79,8 +81,16 @@
       </div>
     </div>
   </form>
-  <div id="output">
-    <ul></ul>
+  <div class="row">
+    <div id="output" class="col-7">
+      <ul></ul>
+    </div>
+    <div class="deck col-5">
+      <h1>Deck Size: <span id="deck-size"></span></h1>
+      <div class="deck-list"></div>
+      <button type="button" id="draw" class="btn btn-success">Starting Hand</button>
+      <div id="hand"></div>
+    </div>
   </div>
 </body>
 
