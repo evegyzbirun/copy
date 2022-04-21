@@ -1,8 +1,87 @@
 <!DOCTYPE html>
 <html lang='en-US'>
+
 <head>
   <title>Document</title>
 </head>
+
 <body>
+  <form id="search-form">
+    <input type="text" placeholder="Card Name Here" id="search-field">
+    <button type="submit">Search</button>
+    <button type="button" id="more-options">More Options</button>
+    <div class="advanced-search hidden">
+      <label for="language">Language</label>
+      <select name="language" id="language">
+        <option></option>
+        <option>Chinese Simplified</option>
+        <option>Chinese Traditional</option>
+        <option>French</option>
+        <option>German</option>
+        <option>Italian</option>
+        <option>Japanese</option>
+        <option>Korean</option>
+        <option>Portuguese (Brazil)</option>
+        <option>Russian</option>
+        <option>Spanish</option>
+      </select>
+      <div class="colors">
+        <input type="checkbox" name="color" value="blue">
+        <label for="blue">Blue</label>
+        <input type="checkbox" name="color" value="red">
+        <label for="red">Red</label>
+        <input type="checkbox" name="color" value="black">
+        <label for="black">Black</label>
+        <input type="checkbox" name="color" value="green">
+        <label for="green">Green</label>
+        <input type="checkbox" name="color" value="white">
+        <label for="white">White</label>
+      </div>
+      <div class="cmc">
+        <input type="number" name="cmc" id="cmc">
+        <label for="cmc">Converted Mana Cost</label>
+        <select name="cmc" id="less-or-more">
+          <option value="equal">=</option>
+          <option value="less">&#8924;</option>
+          <option value="more">&#8925;</option>
+        </select>
+      </div>
+      <div class="types">
+        <select name="types" id="types">
+          <option>Any</option>
+          <option>Artifact</ption>
+          <option>Conspiracy</option>
+          <option>Creature</option>
+          <option>Enchantment</option>
+          <option>Instant</option>
+          <option>Land</option>
+          <option>Phenomenon</option>
+          <option>Plane</option>
+          <option>Planeswalker</option>
+          <option>Scheme</option>
+          <option>Sorcery</option>
+          <option>Tribal</option>
+          <option>Vanguard</option>
+        </select>
+      </div>
+      <div class="color-identity">
+        <label>Color Identity:</label>
+        <input type="checkbox" name="color-identity" value="U">
+        <label for="blue">Blue</label>
+        <input type="checkbox" name="color-identity" value="R">
+        <label for="red">Red</label>
+        <input type="checkbox" name="color-identity" value="B">
+        <label for="black">Black</label>
+        <input type="checkbox" name="color-identity" value="G">
+        <label for="green">Green</label>
+        <input type="checkbox" name="color-identity" value="W">
+        <label for="white">White</label>
+      </div>
+    </div>
+  </form>
+  <div id="output">
+    <ul></ul>
+  </div>
 </body>
+
 </html>
